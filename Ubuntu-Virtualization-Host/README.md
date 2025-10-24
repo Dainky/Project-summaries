@@ -41,7 +41,11 @@ Begin the operating system installation process inside the VM.
 ![Installing OS](referenceImages/10_SettingUpWIndows.png)
 
 ### Windows 11 Requirements Notice
-Installer indicates TPM 2.0 and Secure Boot are required.  
+Installer indicates TPM 2.0 and Secure Boot are required. We we able to bypass this using the CLI. But I have heard that Microsoft is closing that loophole soon for future 25h2 versions of windows. Below are the commands used to bypass the checks. 
+reg add "HKLM\SYSTEM\Setup\LabConfig" /v BypassTPMCheck /t REG_DWORD /d 1 /f
+reg add "HKLM\SYSTEM\Setup\LabConfig" /v BypassSecureBootCheck /t REG_DWORD /d 1 /f
+reg add "HKLM\SYSTEM\Setup\LabConfig" /v BypassRAMCheck /t REG_DWORD /d 1 /f
+reg add "HKLM\SYSTEM\Setup\LabConfig" /v BypassCPUCheck /t REG_DWORD /d 1 /f
 ![Windows 11 Requirements](referenceImages/11_RIP.png)
 
 ### Windows 11 Desktop
@@ -49,5 +53,7 @@ After installation, the Windows 11 desktop loads successfully.
 ![Windows Desktop](referenceImages/12_BypassInternetNeeded.png)
 
 ### Network Connectivity Issue
-Post-install, the network connection failed and SSH access was lost.  
+Post-install, the network connection failed and SSH access was lost. This was caused by the servers IP being changed after messing with the network settings to bridge into the VM. I need to create a static ip for the server, but I am moving in a few weeks so I'll wait until then to fix that. 
 ![Network Issue](referenceImages/13_Broke_Server.png)
+
+This guide is not an exact 1:1 of the website version. Unforuantely, redoing the guide for a second time to put on Github takes extra time that I really would rather be using working on a new project, so it is a bit more raw than the original. The smoother walkthrough is one my website at www.dainky.com, please use it instead of this one. 
