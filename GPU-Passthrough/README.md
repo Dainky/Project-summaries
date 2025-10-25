@@ -1,4 +1,4 @@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-------------------------------------------------------------------------
 This walkthrough covers passing through a GPU to a Windows VM running inside a KVM virtual machine on Ubuntu, done as part of a homelab setup.
 
 ### Check GPU on Host
@@ -65,4 +65,4 @@ Adjusted the CPU allocation so the VM performed properly.
 
 ![Homelab Setup](ReferenceImages/IMG_2857)
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-------------------------------------------------------------------------
