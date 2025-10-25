@@ -22,7 +22,7 @@ Unbound the GPU from the host so only the VM was using it.
 
 ### VM Running with GPU
 The Windows VM booted and ran using the passed-through GPU.  
-![VM Running with GPU](ReferenceImages/6_up and running.png)
+![VM Running with GPU](ReferenceImages/6_up_and_running.png)
 
 ### Install GPU Drivers
 Installed the correct GPU drivers inside the Windows VM.  
