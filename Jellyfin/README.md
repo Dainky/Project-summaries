@@ -18,5 +18,5 @@ I actually went a bit deep for a few nights setting up an automated downloader t
 Obviously all movies and shows downloaded were legally sourced 
 
 
-![sparrow](Photos/sparrow.png)
+![sparrow](Photos/sparrow.jpeg)
 
