@@ -1,5 +1,5 @@
 Jellyfin came soon after my nextcloud project. While Jellyfin wasn't as much of neccessity as Nextcloud, I thought it was a cool concept that I could access a personal Netflix with anyhting I wanted, anywhere in the world. I meant thats kinda cool yea? 
-![Check GPU on Host](Images/Jellyfin1.png)
+![Jelly1](Images/Jelly1.png)
 Actually, with the amount of streaming services now days you could probably argue it's almost a neccesity. One month The Office is on Netflix, the next its on paramount, the next its on HBO. Maybe cable wasn't all that bad?
 
 My Jellyfin is stil in its infant stages for a few reasons. One of the main reasons is that I've been running the server on a 500gb SSD I had laying around from an old PC. Movies take up a lot of space, so I've only been able to download a handfull before having to worry about space. But I'm just getting started with it, I'm eying some used Hardrives and when I get my hands on them, my server will start hosting hundreds of my favorite shows and movies. 
