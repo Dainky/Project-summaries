@@ -2,7 +2,7 @@ This walkthrough covers passing through a GPU to a Windows VM running inside a K
 
 ### Check GPU on Host
 Verified the GPU was detected on the host before starting the passthrough process.  
-![Check GPU on Host](referenceImages/1_NvidiaSMI.png)
+![Check GPU on Host](ReferenceImages/1_NvidiaSMI.png)
 
 ### Enable GPU Passthrough
 Enabled GPU passthrough settings so the VM could use the dedicated GPU.  
