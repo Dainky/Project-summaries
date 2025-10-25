@@ -16,6 +16,17 @@ I actually went a bit deep for a few nights setting up an automated downloader t
 ![Jelly3](Photos/Jelly3.png)
 
 
+
+
+
+
+
+
+
+
+
+
+
 Obviously all movies and shows downloaded were legally sourced 
 
 
