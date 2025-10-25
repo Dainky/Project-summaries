@@ -2,18 +2,18 @@
 
 A quick look at the Nextcloud server running from the homelab currently. This was one of my first projects soon after getting familiar with Linux as a homelab server. Sadly I didn't think of documenting the proccess because it was meant to be more of a practical use service than it was a guide/write-up.
 
-![Nextcloud Dashboard](NextCloud.png)
+![Nextcloud Dashboard](Images/NextCloud.png)
 
 I've really loved using Nextcloud. The reason I created my own cloud service was because of how brutally slow Google Drive felt, and their really small storage space. I was rolling back my main PC to an older version of windows because I use it to run Mobile game bots in mass for a game I enjoy playing. The issue was that LDPlayer had started causing Windows to BSOD all the time, which sucked because the bot was meant to run 24/7, so when I was sleeping it would bluescreen and I was losing lots of uptime. Also my PC bluescreening randomly was 100% not acceptable. After looking into it, an update pushed in a 24_h2 version in early 2025 had changed the way VMs interacted with the kernel, which had resulted in the BSODs.
 
 The LDPlayer version I had to use for the bot was older, and stopped getting much support from the devs, so waiting for them to fix it was not in the cards. Therefore, I needed to rollback to 23h2 (Which I am still on as of writing this). Windows doesn't allow for files to transfer over with that big of a rollback, so I had lots of things I needed to backup. I'm not paying monthly for storage when I have plenty of spare pc parts here at home to setup my own cloud, at this point I feel like i have to order a new card yearly to stop the insane amount of subscriptions from sucking my accounts dry (Actually got a new card in the mail yesterday). So, a little bit of research later, and I decided on Nextcloud.
 
-![Nextcloud App](Nextcloud2.png)
+![Nextcloud App](Images/Nextcloud2.png)
 
 I could have made a NAS, but I also wanted a cloud enviroment so me and my friends could share files much faster than google drive. We are often tinkering with obviously legally sourced games and need to replace/send files to eachother so this was a nobrainer.
 
 So far I love it. I have the app on my phone, my freinds and I use it often and I even started using it to house our family pictures. We have 50+ gigs of family photos from all sorts of devices since I was a kiddo, and they were at risk of being lost because we simply had to place to store them.
 
-![Nextcloud Files](Nextcloud3.png)
+![Nextcloud Files](Images/Nextcloud3.png)
 
 I installed nextcloud on my old mac, and set up the photos folder to sync with my server and over night 25gigs of photos synced onto my server. I even was able to update my IPhone 12 to iOS 26 finally since I backed up all my photos to the cloud and could make room for the huge update to run. All using leftover pc parts laying around the house.
