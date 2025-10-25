@@ -6,6 +6,7 @@ Actually, with the amount of streaming services now days you could probably argu
 
 My Jellyfin is stil in its infant stages for a few reasons. One of the main reasons is that I've been running the server on a 500gb SSD I had laying around from an old PC. Movies take up a lot of space, so I've only been able to download a handfull before having to worry about space. But I'm just getting started with it, I'm eying some used Hardrives and when I get my hands on them, my server will start hosting hundreds of my favorite shows and movies. 
 
+My Jellyfin server is accessible remotely through a secure reverse proxy using Caddy, rather than exposing the service directly to the internet. This allowed me and a few friends to stream our library externally while still keeping the server protected.
 
 ![Jelly12](Photos/Jelly2.png)
 
