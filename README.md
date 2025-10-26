@@ -14,4 +14,4 @@
 | [Security+](Security+/) | Study notes and exam prep summaries |
 | [Tools](tools/) | Handy tools and scripts |
 
-The home for all of these is based at www.dainky.com, my personal website with the original writeups and other projets I work on. 
+The home for all of these is based at www.dainky.com, my personal website with the original writeups and other projects I work on. 
