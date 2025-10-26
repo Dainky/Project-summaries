@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="github-header-banner" alt="Dainky Homelab Projects Banner" width="100%">
+</p>
+
+
 ## 📁 Project Index
 
 | Project | Description |
