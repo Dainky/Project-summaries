@@ -1,78 +1,140 @@
-Jellyfin is super useful, the main problem with it was that you had to manually install every movie, name it, and then move it to the correct folder. Like i mentioned in the previous log, I had found and even setup some basic automation tasks for Jellyfin using radarr and prowlarr, but they were hosted on my main Windows machine. That meant that every time I downloaded a movie, I had to transfer it with SCP to the server which would take a while. That and I also forgot the password to login to both radarr and prowlarr, but you can go into the config and just turn that off. So the easy solution was to move the stack over directly to the server and polish it up, and thats exactly what I did. 
+# 🎬 Jellyfin + Usenet Automation Stack
 
+Jellyfin came soon after my Nextcloud project. While Jellyfin wasn’t as much of a necessity as Nextcloud, I thought it was a cool concept — having a personal Netflix with **anything I wanted**, accessible **anywhere in the world**. I mean, that’s kinda cool, yeah?
 
+Actually, with the number of streaming services these days, you could argue it’s almost a necessity. One month *The Office* is on Netflix, the next it’s on Paramount+, then it’s on HBO. Maybe cable wasn’t all that bad after all.
+
+---
+
+### 🧠 Background
+
+The main issue with Jellyfin was that you had to **manually install every movie**, name it properly, and move it to the right folder. Like I mentioned in the previous log, I had found and even set up some basic automation tasks using **Radarr** and **Prowlarr**, but they were hosted on my main Windows machine.
+
+That meant every time I downloaded a movie, I had to **transfer it via SCP** to the server — which took forever. On top of that, I forgot the login password for both Radarr and Prowlarr (lol), though you can disable authentication in the config if needed.
+
+So, the easy solution: move the **entire stack directly to the server**, polish it up, and integrate everything under one automated workflow.  
+And that’s exactly what I did.
+
+---
 
 ![Screenshot_1](Photos/Screenshot_1.png)
-First things first, we create a new container stack for Radarr and SABnzbd with docker since we will run these all in containers. 
+**Step 1:** Create a new container stack for Radarr and SABnzbd using Docker. These will handle all our movie automation and downloads.
+
+---
 
 ![Screenshot_2](Photos/Screenshot_2.png)
-We pull radarr and sabnzbd and have created our new containers inside the stack.
+**Step 2:** Pull the Radarr and SABnzbd images — our new containers are created inside the stack.
+
+---
 
 ![Screenshot_3](Photos/Screenshot_3.png)
-Updated a few network rules to make sure the containers can communicate properly.
+**Step 3:** Update a few network rules to make sure the containers can communicate properly within the stack.
+
+---
 
 ![Screenshot_4](Photos/Screenshot_4.png)
-SABnzdb has been installed, and is properly communicating with our webbrowsers.
+**Step 4:** SABnzbd is installed and accessible via the web UI. The downloader portion of the workflow is now ready.
+
+---
 
 ![Screenshot_5](Photos/Screenshot_5.png)
-Here we are inside radarrs web UI setting it up, this specifically is us pointing prowlarr to radarr as its the indexer manager.
+**Step 5:** Inside Radarr’s web interface, we point **Prowlarr** to Radarr as its indexer manager.  
+This links movie searches to the indexers we configure later.
+
+---
 
 ![Screenshot_5.1](Photos/Screenshot_5.1.png)
-*This is after the entire setup and was a post project thought but was added here because its kinda where it fits in the workflow*
+*Added post-project but belongs here in the workflow:*  
+A separate **Sonarr** instance was configured specifically for anime to avoid naming conflicts and library mix-ups, since anime tends to use different naming schemes.
 
-I also added sonarr in order to be able to pull tv shows and anime. This sonarr was set up for anime only to avoid complications with libraries and naming schemes, since anime and tv shows use different naming schemes quite often. 
+---
 
 ![Screenshot_5.2](Photos/Screenshot_5.2.png)
-*This was also after the main project was completed, but it also is being added here because it fits in the workflow here*
+*Also post-project:*  
+A second **Sonarr** instance was added for general TV series like *The Office*, *Game of Thrones*, and *Dexter*.  
+Currently, this library is empty — mostly because I prefer movies and anime (and I’ve already seen most of the good shows).
 
-Added a sonarr for base Tv series so we can pull shows like The office, Game of Thrones, and Dexter. Nothing is currently in there because I prefer movies or anime series most of the time. Or at least because I have seen most tv series I think are worth watching atm. 
+---
+
 ![Screenshot_5.3](Photos/Screenshot_5.3.png)
-Prowlarr being linked to our indexer that we will use, which is hidden our of respect to them.
+**Step 6:** Prowlarr is linked to our chosen **indexer (hidden out of respect)** — this is where it fetches the actual NZB data.
+
+---
 
 ![Screenshot_6](Photos/Screenshot_6.png)
-Now we need to setup a download client, for that we will use SABnzbd. 
+**Step 7:** Time to configure our download client — **SABnzbd** — so it can fetch data from the indexers and store files in the correct directories.
+
+---
 
 ![Screenshot_7](Photos/Screenshot_7.png)
-SAB has been setup and is ready to go
+**Step 8:** SABnzbd is configured and connected to Radarr and Sonarr. Everything’s now automated from search to download.
+
+---
 
 ![Screenshot_8](Photos/Screenshot_8.png)
-A test run shows that Barnyard was requested through radarr, prowlarr sent the query to our indexer which found our movie, and then fowarded the download to SAB to download the movie.
+**Step 9:** Test run: *Barnyard* was requested through Radarr → Prowlarr queried the indexer → found the file → passed it to SABnzbd → download complete.
+
+---
 
 ![Screenshot_9](Photos/Screenshot_9.png)
-After the movie was downloaded, radarr finds it, matches its naming scheme so jellyfin can have the correct metadata.
+**Step 10:** After the download, Radarr recognizes the movie, renames it, and applies the correct metadata format for Jellyfin.
+
+---
 
 ![Screenshot_10](Photos/Screenshot_10.png)
-After that, radarr imports the movie fully to our new 4TB HDD we bought to store movies. This is where the movie will live and be access from by Jellyfin. 
+**Step 11:** Radarr imports the completed movie into our **new 4TB HDD**, where it will live permanently and be served to Jellyfin.
+
+---
 
 ![Screenshot_11](Photos/Screenshot_11.png)
-Success. The movie is watchable on Jellyfin, both locally and over the web meaning our stack has worked! 
+✅ **Success:** The movie is now watchable through Jellyfin — both locally and remotely. The entire automated workflow works flawlessly.
+
+---
 
 ![Screenshot_12](Photos/Screenshot_12.png)
-Showing our drives on the server you can see our new 4TB drive, our OS drive (500GB SSD) and another 2TB drive I found hidden in an old bay on an old PC laying around.
+**Step 12:** Drive overview — our 4TB HDD for movies, a 500GB SSD for the OS, and an old 2TB drive salvaged from another PC.
+
+---
 
 ![Screenshot_13](Photos/Screenshot_13.png)
-We try to format the 2TB drive, but it disappears from the system when I tried to format it. Sadly after running some checks and hours of tinkering, it seems that the old 2TB drive was fried and I coudln't save it. It could have held another 50 movies :/
+**Step 13:** Tried formatting the 2TB drive, but it vanished mid-format. After some troubleshooting, it turned out to be fried. RIP — could’ve held another 50 movies. 😭
+
+---
 
 ![Screenshot_14](Photos/Screenshot_14.png)
-Final stack inside docker: prowlarr, radarr, sabnzbd, sonarr and sonar-anime.
+**Step 14:** Final Docker stack lineup:  
+> **Prowlarr**, **Radarr**, **SABnzbd**, **Sonarr**, and **Sonarr-Anime**
+
+---
 
 ![Screenshot_15](Photos/Screenshot_15.png)
-A few days later while making this writeup, showing all of our containers are up and running steadily!
+**Step 15:** A few days later — all containers are still running strong, no hiccups.
+
+---
 
 ![Screenshot_16](Photos/Screenshot_16.png)
-Updated look at Jellyfin with the new Tv shows / Anime series folders, along with lots more movies insdie the movies folder. 
-I also added some custom css from the Ultrachromatic theme by https://github.com/CTalvio/Ultrachromic
+**Step 16:** Updated Jellyfin interface with new **TV Shows**, **Anime**, and **Movies** folders.  
+Also added custom CSS from the gorgeous [Ultrachromic theme](https://github.com/CTalvio/Ultrachromic) by CTalvio.
 
-Conclusion:
- *While it isn't baked into the log as much as I would want, I do want to note that this stack is powered using Usenet, which is like 12$ a month to use servers for downloading. This is all doable with free torrenting, but it takes WAY longer. With Usenet, I'm able to download a 40gb movies in 10 minutes with 1gig down. With a torrent, this would take an hour at least*
- 
-This turned a semi practical design where you needed to put it a decent amount of work and even more time to trasnfer files, into a fully automated process where for the majority of the time all you need to do is search for what you want, add it and it will be inside your personal media and ready to view in no time. The only limit now is storage. Did I fill a 4TB drive in less than two days? Maybe. Do I possibly have a new storage addiction? Maybe. We have been using this to watch movies the past few days during Halloween, and its been awesome. Last night we decided on "The Wailing". I requested it on radarr, and the 40GB Remux version was downloaded and ready to watch in 10 mins. Great movie btw.
+---
 
+### 🧾 Conclusion
 
+While it isn't baked into the screenshots as much as I’d like, this entire stack is powered by **Usenet**, which costs around **$12/month** for access to the download servers.  
+This can all be done using torrents for free — but trust me, **Usenet is insanely faster**.  
+I can download a **40GB movie in 10 minutes** on a 1 Gbps connection. A torrent? That’d take an hour or more.
 
+This setup turned what used to be a semi-practical workflow (manual downloads, naming, and transfers) into a **fully automated media pipeline**. Now, all I need to do is **search for a movie**, hit **add**, and it appears in my Jellyfin library minutes later — metadata, cover art, and all.
 
+The only real limit now? **Storage.**  
+Did I fill a 4TB drive in two days? Maybe.  
+Do I have a new storage addiction? Maybe. 😅  
 
+We’ve been using this setup over Halloween, and it’s been incredible. Last night we watched *The Wailing* — requested it in Radarr, the **40GB Remux version** downloaded in 10 minutes flat.  
+Great movie, by the way.
 
-All media downloaded was already legally owned by me, and trasfered from storage where I had legal copies. 
+---
+
+> *All media downloaded was already legally owned by me and transferred from personal backups of legally purchased copies.*
 
 
