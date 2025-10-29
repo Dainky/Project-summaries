@@ -2,17 +2,22 @@
   <img src="github-header-banner.png" width="100%">
 </p>
 
+---
 
-## 📁 Project Index
+## 🧭 Project Index
 
-| Project | Description |
-|---------|--------------|
-| [Ubuntu Virtualization Host](Ubuntu-Virtualization-Host/) | KVM on Ubuntu, Windows VM, GPU passthrough, automation |
-| [GPU Passthrough](GPU-Passthrough/) | GPU passthrough into a nested VM |
-| [Nextcloud](Nextcloud/) | Self-hosted cloud for backups and family media |
-| [Jellyfin](Jellyfin/) | Media server with automated content pipeline |
-| [Jellyfin Automation](Jellyfin Automation/) | Automated Jellyfin Setup |
-| [Security+](Security+/) | Study notes and exam prep summaries |
-| [Tools](tools/) | Handy tools and scripts |
+| 📁 Project | 💬 Description |
+|-------------|----------------|
+| [**Ubuntu Virtualization Host**](Ubuntu-Virtualization-Host/) | KVM setup on Ubuntu with GPU passthrough and automation. |
+| [**GPU Passthrough**](GPU-Passthrough/) | Nested virtualization and GPU passthrough experiments. |
+| [**Nextcloud**](Nextcloud/) | Self-hosted private cloud for backups and family media. |
+| [**Jellyfin**](Jellyfin/) | Media server with personal Netflix-style access. |
+| [**Jellyfin Automation**](Jellyfin-Automation/) | Fully automated content pipeline powered by Radarr, Sonarr, and Prowlarr. |
+| [**Security+**](Security+/) | Study notes, key concepts, and prep summaries. |
+| [**Tools**](tools/) | Handy scripts and utilities used across my projects. |
 
-The home for all of these is based at www.dainky.com, my personal website with the original writeups and other projects I work on. 
+---
+
+<p align="center">
+  <i>All projects are documented in detail on my personal site: <a href="https://www.dainky.com" target="_blank">dainky.com</a></i>
+</p>
