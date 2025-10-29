@@ -9,7 +9,7 @@ Jellyfin came soon after my Nextcloud project. While Jellyfin wasn’t as much o
 
 The main issue with Jellyfin was that you had to **manually install every movie**, name it properly, and move it to the right folder. Like I mentioned in the previous log, I had found and even set up some basic automation tasks using **Radarr** and **Prowlarr**, but they were hosted on my main Windows machine.
 
-That meant every time I downloaded a movie, I had to **transfer it via SCP** to the server — which took forever. On top of that, I forgot the login password for both Radarr and Prowlarr (lol), though you can disable authentication in the config if needed.
+That meant every time I downloaded a movie, I had to **transfer it via SCP** to the server — which took forever. On top of that, I forgot the login password for both Radarr and Prowlarr, though you can disable authentication in the config if needed.
 
 So, the easy solution: move the **entire stack directly to the server**, polish it up, and integrate everything under one automated workflow.  
 And that’s exactly what I did.
