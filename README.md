@@ -11,8 +11,8 @@
 | [**Ubuntu Virtualization Host**](Ubuntu-Virtualization-Host/) | KVM setup on Ubuntu with GPU passthrough and automation. |
 | [**GPU Passthrough**](GPU-Passthrough/) | Nested virtualization and GPU passthrough experiments. |
 | [**Nextcloud**](Nextcloud/) | Self-hosted private cloud for backups and family media. |
-| [**Jellyfin**](Jellyfin/) | Media server with personal Netflix-style access. |
 | [**Jellyfin Automation**](Jellyfin-Automation/) | Fully automated content pipeline powered by Radarr, Sonarr, and Prowlarr. |
+| [**Jellyfin**](Jellyfin/) | Media server with personal Netflix-style access. |
 | [**Security+**](Security+/) | Study notes, key concepts, and prep summaries. |
 | [**Tools**](tools/) | Handy scripts and utilities used across my projects. |
 
