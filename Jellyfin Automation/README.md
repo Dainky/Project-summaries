@@ -2,7 +2,6 @@
 
 Jellyfin came soon after my Nextcloud project. While Jellyfin wasn’t as much of a necessity as Nextcloud, I thought it was a cool concept — having a personal Netflix with **anything I wanted**, accessible **anywhere in the world**. I mean, that’s kinda cool, yeah?
 
-Actually, with the number of streaming services these days, you could argue it’s almost a necessity. One month *The Office* is on Netflix, the next it’s on Paramount+, then it’s on HBO. Maybe cable wasn’t all that bad after all.
 
 ---
 
