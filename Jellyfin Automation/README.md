@@ -21,6 +21,9 @@ Sample text
 ![Screenshot_5.2](Photos/Screenshot_5.2.png)
 Sample text
 
+![Screenshot_5.3](Photos/Screenshot_5.3.png)
+Sample text
+
 ![Screenshot_6](Photos/Screenshot_6.png)
 Sample text
 
