@@ -27,6 +27,7 @@ And that’s exactly what I did.
 ---
 
 ![Screenshot_3](Photos/Screenshot_3.png)
+
 **Step 3:** Update a few network rules to make sure the containers can communicate properly within the stack.
 
 ---
