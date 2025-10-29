@@ -121,15 +121,21 @@ Also added custom CSS from the gorgeous [Ultrachromic theme](https://github.com/
 
 ### 🧾 Conclusion
 
-While it isn't baked into the screenshots as much as I’d like, this entire stack is powered by **Usenet**, which costs around **$12/month** for access to the download servers.  
+While it isn't baked into the screenshots as much as I’d like, this entire stack is powered by **Usenet**, which costs around **$12/month** for access to the download servers.
+I can download a **40GB movie in 10 minutes** on a 1 Gbps connection. A torrent would take like an hour or so.
+
+Also, this log looks very short, like you could complete this in a few hours. If you're codingjesus, sure maybe. But there is alot that isn't shown here for many different reasons. One being that API keys were EVERYWHERE in this project. Another being that there were hours and hour spent on really small dumb things nobody wants to care about.
+For example, you have to setup quality profiles, languages and subtitels, figure out which quality order you want for what, and more. Anime was having a very hard time downloading for a long time, until I learned they use different epsiode naming schemes. Normal tv shows go with S01EP02 formatting. Well anime usually just goes with a raw number, like One Piece 062. 
+That small detail meant very little was downloading making the stack look broken, but it wasn't. Just a small detail. One thing I still struggle with is aobut 10% of the time, radarr fails to auto import. Which means I neeed to go in and manually move the file into the correct folder. Most likely a naming issue. 
+Then there was stuttering over the web when trying to access it. Well, turns out streaming a 1080p Remux directly needs lots of upload, and I only have 35 upload. So we had to turn on some transcoding magic to lower that down a bit. 
 This can all be done using torrents for free — but trust me, **Usenet is insanely faster**.  
-I can download a **40GB movie in 10 minutes** on a 1 Gbps connection. A torrent? That’d take an hour or more.
+
 
 This setup turned what used to be a semi-practical workflow (manual downloads, naming, and transfers) into a **fully automated media pipeline**. Now, all I need to do is **search for a movie**, hit **add**, and it appears in my Jellyfin library minutes later — metadata, cover art, and all.
 
 The only real limit now? **Storage.**  
 Did I fill a 4TB drive in two days? Maybe.  
-Do I have a new storage addiction? Maybe. 😅  
+Do I have a new storage addiction? Maybe. 
 
 We’ve been using this setup over Halloween, and it’s been incredible. Last night we watched *The Wailing* — requested it in Radarr, the **40GB Remux version** downloaded in 10 minutes flat.  
 Great movie, by the way.
