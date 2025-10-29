@@ -1,3 +1,9 @@
+Jellyfin is super useful, the main problem with it was that you had to manually install every movie, name it, and then move it to the correct folder. 
+
+
+
+
+
 Sample text
 
 ![Screenshot_1](Photos/Screenshot_1.png)
