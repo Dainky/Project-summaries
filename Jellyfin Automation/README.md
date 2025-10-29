@@ -56,7 +56,7 @@ Currently, this library is empty — mostly because I prefer movies and anime (a
 
 ---
 
-![Screenshot_5.3](Photos/Screenshot_5.3.png)
+![Screenshot_5.3](Photos/Screenshot5.3.png)
 **Step 6:** Prowlarr is linked to our chosen **indexer (hidden out of respect)** — this is where it fetches the actual NZB data.
 
 ---
