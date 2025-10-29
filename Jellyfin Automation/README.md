@@ -38,6 +38,7 @@ And that’s exactly what I did.
 ---
 
 ![Screenshot_5](Photos/Screenshot_5.png)
+
 **Step 5:** Inside Radarr’s web interface, we point **Prowlarr** to Radarr as its indexer manager.  
 This links movie searches to the indexers we configure later.
 
