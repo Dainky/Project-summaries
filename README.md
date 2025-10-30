@@ -19,5 +19,7 @@
 ---
 
 <p align="center">
-  <i>All projects are documented in detail on my personal site: <a href="https://www.dainky.com" target="_blank">dainky.com</a></i>
+  <i>Home website that I use as a hub for all my services. <a href="https://www.dainky.com" target="_blank">dainky.com</a></i>
+
+  Note that i do not add projects writeups to my website anymore since creating a writeup here and on the website seems to be a waste of time. This repo will now become the main location for all writeups.
 </p>
