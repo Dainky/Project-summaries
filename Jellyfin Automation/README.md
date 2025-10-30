@@ -140,6 +140,8 @@ Do I have a new storage addiction? Maybe.
 We’ve been using this setup over Halloween, and it’s been incredible. Last night we watched *The Wailing* — requested it in Radarr, the **40GB Remux version** downloaded in 10 minutes flat.  
 Great movie, by the way.
 
+Edit; I also added bazarr to the stack. It's role is to find and integrate subtitles to all dedicated shows on sonarr-anime. While most had subtitles, a few would come with no english subtitles making them unwatchable. Bazarr automates this for us. 
+
 ---
 
 > *All media downloaded was already legally owned by me and transferred from personal backups of legally purchased copies.*
