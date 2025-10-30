@@ -21,5 +21,5 @@
 <p align="center">
   <i>Home website that I use as a hub for all my services. <a href="https://www.dainky.com" target="_blank">dainky.com</a></i>
 
-  Note that i do not add projects writeups to my website anymore since creating a writeup here and on the website seems to be a waste of time. This repo will now become the main location for all writeups.
+  Note that i do not add projects writeups to my website anymore since creating a writeup both here and on the website seems to be a waste of time, I would rather spend that time on a new project than rewriting it for a second time. This repo will now become the main location for all writeups.
 </p>
